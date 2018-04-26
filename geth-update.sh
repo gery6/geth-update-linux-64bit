@@ -31,9 +31,6 @@ application=`echo $file |sed 's,-, ,' |awk '{print $1}'`
 ####
 sym_link_check=`ls -l|grep "$application -> $dir"`
 old_sym=`ls -l|grep "$application -> "`
-echo "DEBUG"
-echo "SYM_CHECK: $sym_link_check"
-echo "OLD_SYM: $old_sym"
 ## info screen
 echo ""
 echo "$application install/update script"
